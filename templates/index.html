@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load bootstrap3 %}
+{% block content %}
+    <div class="container">
+        <form action="/t" class="form" style="width: 40%">
+            {% bootstrap_form form %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary">
+                    {% bootstrap_icon "star" %} Submit
+                </button>
+            {% endbuttons %}
+        </form>
+    </div>
+{% endblock %}
